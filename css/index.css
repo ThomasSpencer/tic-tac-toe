@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.title {
+  text-align: center;
+}
+
 .table {
   margin: auto;
   width: 600px;
