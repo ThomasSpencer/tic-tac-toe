@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after, {
+  box-sizing: border-box;
+}
+
+.table {
+  margin: auto;
+  width: 600px;
+  border-collapse: collapse;
+}
+
+.square {
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+}
