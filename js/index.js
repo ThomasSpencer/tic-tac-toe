@@ -37,17 +37,17 @@ $(function(){
     if (self.text() === "") {
       if (turn % 2 === 0) {
         self.text('X')
-        turn++;
       }else {
         self.text('O')
-        turn++;
       }
+      turn++;
     } else {
       alert("Nice try, you cheaty cheater")
     }
 
+
     if (turn >= 5) {
-      winCheck(self.text());
+      window.setTimeout(winCheck, 10, self.text());
     }
 
 
