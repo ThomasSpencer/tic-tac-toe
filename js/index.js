@@ -1,28 +1,28 @@
 $(function(){
 
-  var winCheck = function() {
-    if ( $('#1').text() === $('#4').text() && $('#4').text() === $('#7').text() ) {
+  function winCheck(letter) {
+    if ( $('#1').text() === letter && $('#4').text() === letter && $('#7').text() === letter ) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#2').text() === $('#5').text() && $('#5').text() === $('#8').text()) {
+    }else if ($('#2').text() === letter && $('#5').text() === letter && $('#8').text() === letter) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#3').text() === $('#6').text() && $('#6').text() === $('#9').text()) {
+    }else if ($('#3').text() === letter && $('#6').text() === letter && $('#9').text() === letter) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#1').text() === $('#5').text() && $('#5').text() === $('#9').text()) {
+    }else if ($('#1').text() === letter && $('#5').text() === letter && $('#9').text() === letter) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#3').text() === $('#5').text() && $('#5').text() === $('#7').text()) {
+    }else if ($('#3').text() === letter && $('#5').text() === letter && $('#7').text() === letter) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#1').text() === $('#2').text() && $('#2').text() === $('#3').text()) {
+    }else if ($('#1').text() === letter && $('#2').text() === letter && $('#3').text() === letter) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#4').text() === $('#5').text() && $('#5').text() === $('#6').text()) {
+    }else if ($('#4').text() === letter && $('#5').text() === letter && $('#6').text() === letter) {
       alert("WINNER!")
       location.reload()
-    }else if ($('#7').text() === $('#8').text() && $('#8').text() === $('#9').text()) {
+    }else if ($('#7').text() === letter && $('#8').text() === letter && $('#9').text() === letter) {
       alert("WINNER!")
       location.reload()
     }
@@ -47,7 +47,7 @@ $(function(){
     }
 
     if (turn >= 5) {
-      winCheck();
+      winCheck(self.text());
     }
 
 
